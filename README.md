@@ -16,7 +16,7 @@ Just type a keyword in a search field and enjoy amazing photos.
 
 ### Using
 
-To try Amazing photos, go to [home page]().
+To try Amazing photos, go to [home page](https://amazing-photos.vercel.app/).
 To work on the code locally, clone a [GitHub repository](targetURL "Link title") on your computer. 
 
 ### Important note

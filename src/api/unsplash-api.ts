@@ -1,4 +1,4 @@
-import { createApi } from 'unsplash-js';
+import { ColorId, createApi, Orientation } from 'unsplash-js';
 import { Basic } from 'unsplash-js/dist/methods/photos/types';
 
 const unsplash = createApi({
@@ -7,11 +7,15 @@ const unsplash = createApi({
 
 export const searchPhotos = (
   keyword: string,
-  setImages: React.Dispatch<React.SetStateAction<Basic[]>>
+  setImages: React.Dispatch<React.SetStateAction<Basic[]>>,
+  color: ColorId,
+  orientation: Orientation
 ) =>
   unsplash.search
     .getPhotos({
       query: keyword,
+      color,
+      orientation,
     })
     .then((data) => setImages(data.response?.results))
     .catch((error) => console.log(error.errors[0]));
