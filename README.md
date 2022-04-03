@@ -4,7 +4,7 @@ Amazing photos is an app for searching photos via Unsplash API.
 
 ## Description
 
-Just type a keyword in a search field, select color and oriantation and enjoy amazing photos.
+Just type a keyword in a search field, select color and orientation and enjoy amazing photos.
 
 ## Getting Started
 
