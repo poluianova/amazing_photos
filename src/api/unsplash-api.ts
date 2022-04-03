@@ -16,6 +16,8 @@ export const searchPhotos = (
       query: keyword,
       color,
       orientation,
+      page: 1,
+      perPage: 20,
     })
     .then((data) => setImages(data.response?.results))
     .catch((error) => console.log(error.errors[0]));

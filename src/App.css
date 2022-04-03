@@ -1,28 +1,33 @@
 body {
-  background-color: #81c9be;
-  background: radial-gradient(circle, rgba(129,201,190,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+background: linear-gradient(180deg, rgba(129,201,190,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+min-height: 100vh;
 }
 
 .App {
   text-align: center;
 }
 
-.search-container form {
- display: flex;
- margin-top: 50px;
- width: 360px;
- margin: 50px auto;
+h1 {
+  font-size: 50px;
+  color: #9e4d64;
 }
 
-.input-container {
- margin-right: 20px;
- color: #9e4d64;
-    font-size: 20px;
+.search-container {
+ display: flex;
+ max-width: 420px;
+ margin: 0 auto 50px;
 }
+
+.search-container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ }
 
 .input-container input, select {
   display: block;
-  width: 100%;
+  width: 260px;
   border-radius: 10px;
   margin-top: 20px;
   padding: 10px 30px;
@@ -31,24 +36,22 @@ body {
   outline: none;
   border: 1px solid white;
   background-color: white;
+  box-sizing: border-box;
 }
 
-/* .input-container input:hover {
-  border-color: rgba(62, 62, 107, 0.8);
-} */
-
-
+.input-container input:hover, .input-container select:hover {
+  border: 1px solid rgb(65, 179, 163);
+}
 
 .search-container button {
-  width: 80px;
+  width: 140px;
   height: 40px;
-  align-self: flex-end;
   border: 1px solid rgb(65, 179, 163);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   background: #41b3a3;
   font-size: 16px;
   color: white;
+  margin-top: 20px;
 }
 
 .search-container button:hover {
@@ -62,31 +65,41 @@ body {
 }
 
 .photo {
-  display: flex;
   margin: 10px;
   border-radius: 5px;
+  display: inline-block;
+    width: 100%;
 }
 
 .photo image {
-  flex: 100%;
+    width: 100%;
 }
 
-@media min-width(768px) {
+@media (max-width: 768px) {
   .photos-container {
     column-count: 3;
   }
 }
 
-@media min-width(479px) {
+@media (max-width: 479px) {
   .photos-container {
     margin: 20px;
     column-count: 2;
   }
 }
 
-@media min-width(360px) {
+@media (max-width: 360px) {
+  h1 {
+    font-size: 30px;
+  }
+  .search-container form {
+    flex-direction: column;
+  }
   .photos-container {
     margin: 10px;
     column-count: 1;
+  }
+  .photo {
+    margin: 0;
   }
 }

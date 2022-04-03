@@ -21,17 +21,15 @@ const SearchContainer = ({
     <div className="search-container">
       <form onSubmit={handleSubmit}>
         <div className="input-container">
-          <label>
-            Find photos by keyword
-            <input
-              type="text"
-              value={keyword}
-              onChange={handleInputChange}
-              placeholder="Type the keyword here"
-            />
-          </label>
+          <input
+            type="text"
+            value={keyword}
+            onChange={handleInputChange}
+            placeholder="Type the keyword here"
+          />
 
           <select name="color" onChange={handleColorChange}>
+            <option value="">Any color</option>
             <option value="black_and_white">Black and white</option>
             <option value="black">Black</option>
             <option value="white">White</option>
@@ -45,6 +43,7 @@ const SearchContainer = ({
             <option value="blue">Blue</option>
           </select>
           <select name="orientation" onChange={handleOrientationChange}>
+            <option value="">Any orientation</option>
             <option value="landscape">Landscape</option>
             <option value="portrait">Portrait</option>
             <option value="squarish">Squarish</option>
