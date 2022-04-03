@@ -17,7 +17,7 @@ Just type a keyword in a search field, select color and orientation and enjoy am
 ### Using
 
 To try Amazing photos, go to [home page](https://amazing-photos.vercel.app/).
-To work on the code locally, clone a [GitHub repository](targetURL "Link title") on your computer. 
+To work on the code locally, clone a [GitHub repository](https://github.com/poluianova/amazing_photos) on your computer. 
 
 ### Important note
 
